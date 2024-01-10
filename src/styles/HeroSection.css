@@ -1,0 +1,18 @@
+.slider {
+  display: flex;
+  position: relative;
+  width: 1080px;
+  height: 528px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: #f8f8f8;
+  filter: blur(0.5px);
+}
+
+.slider-image {
+  max-width: 100%;
+  max-height: 100%;
+}

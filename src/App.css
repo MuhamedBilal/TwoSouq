@@ -1,0 +1,17 @@
+body {
+    direction: rtl;
+  }
+  
+
+@font-face {
+    font-family: 'SF Arabic';
+    src: url('./assets/SFArabic-Regular.eot');
+    src: local('SF Arabic'), local('SFArabic-Regular'),
+        url('./assets/SFArabic-Regular.eot') format('embedded-opentype'),
+        url('./assets/SFArabic-Regular.woff2') format('woff2'),
+        url('./assets/SFArabic-Regular.woff') format('woff'),
+        url('./assets/SFArabic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

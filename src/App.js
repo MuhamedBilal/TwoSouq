@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
+import NavbarII from './components/NavbarII'
 import HeroSection from "./components/HeroSection";
 import Categories from "./components/Categories";
 import Other from "./components/Other";
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <NavbarII />
       <HeroSection/>
       <Categories/>
       <Other/>
