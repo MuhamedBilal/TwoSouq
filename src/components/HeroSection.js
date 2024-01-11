@@ -16,7 +16,17 @@ function HeroSection() {
       autoplay: true,
       autoplaySpeed: 3000, 
       centerMode: true,
-      centerPadding: '16.9%', 
+      centerPadding: '17%', 
+      responsive: [
+        {
+          breakpoint: 768, // Adjust this breakpoint as needed
+          settings: {
+            slidesToShow: 1,
+      centerMode: false,
+
+          },
+        },
+      ],
     }
   
   return (

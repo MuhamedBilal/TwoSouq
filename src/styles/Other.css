@@ -1,5 +1,4 @@
 .other-container {
-  padding: 25px 125px 25px 125px;
 }
 
 .section-header {
@@ -13,6 +12,8 @@
   font-style: normal;
   font-weight: 711;
   line-height: normal;
+  padding: 25px 5% 25px 5%;
+
 }
 
 .card-slider {
@@ -42,14 +43,13 @@
   border-radius: var(--Radius---Sm, 4px) var(--Radius---Sm, 4px) 0px 0px;
   background: lightgray 50% / cover no-repeat;
   height: 228px;
-  width: 250px;
+  width: 100%;
 }
 
 .card-details {
   padding: 0px 10px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-self: stretch;
 }
 
@@ -154,7 +154,25 @@
 }
 
 .slick-slider .slick-track,
-.slick-slider .slick-list {
+.slick-slider  {
+  direction: rtl;
+}
+.slick-list {
   direction: ltr;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .section-header {
+
+    font-size: 18px;
+   white-space: nowrap;
+    font-weight: 600;
+    
+ 
+  
+  }
+  
+
+
+}

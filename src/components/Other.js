@@ -20,18 +20,38 @@ function Other() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
-    variableWidth: false,     
-  swipeToSlide: true,   
-  touchThreshold: 50,   
-  waitForAnimate: false, 
+    variableWidth: false,
+    swipeToSlide: true,
+    touchThreshold: 50,
+    waitForAnimate: false,
+    // rtl:true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
-
   return (
     <div className="other-container">
       {sectionsNames.map((sectionName, index) => (
         <div key={index} className="section">
           <div className="section-header">
-            <h2>{sectionName}</h2>
+            <div>{sectionName}</div>
             <div className="view-all">
               <span>مشاهدة الكل</span>
               <FontAwesomeIcon icon={faAngleLeft} />
@@ -48,6 +68,8 @@ function Other() {
                 <div className="card-details">
                   <div className="card-head">
                   <div className="card-like">
+                  <div className="card-price">{cardData[0].price}</div>
+                  </div>
                     <div className="like-icon-container">
                       <FontAwesomeIcon
                         className="like-icon"
@@ -55,23 +77,21 @@ function Other() {
                       />
                     </div>
                   </div>
-                  <div className="card-price">{cardData[0].price}</div>
-                  </div>
                   <div className="card-name">{cardData[0].name}</div>
                   <div className="card-description">
                     {cardData[0].description}
                   </div>
                   <div className="card-f">
-                    <div className="card-days">
-                      {cardData[0].days}
-                      <FontAwesomeIcon icon={faClock} className="days-icon" />
-                    </div>
                     <div className="card-location">
-                      {cardData[0].location}
                       <FontAwesomeIcon
                         icon={faLocationDot}
                         className="location-icon"
-                      />
+                        />
+                        {cardData[0].location}
+                    </div>
+                    <div className="card-days">
+                      <FontAwesomeIcon icon={faClock} className="days-icon" />
+                      {cardData[0].days}
                     </div>
                   </div>
                 </div>

@@ -1,12 +1,13 @@
 .Navbar {
   display: flex;
-  width: 1540px;
+  width: 100%;
   height: 64px;
-  padding: 0px 100px;
+  padding: 0px 5%;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
   background: #273d5d;
+  white-space: nowrap;
 }
 
 .loginstuff {
@@ -20,7 +21,6 @@
   padding: var(--Spacing---lg, 8px) var(--Spacing---xl, 16px);
   justify-content: center;
   align-items: center;
-  gap: 5px;
   border-radius: 7px;
   background: var(--02---Dark-Color---White, #fff);
   color: #3d3d3d;
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 20px;
 }
 
 .country {
@@ -89,4 +89,9 @@
 
 .lang {
   margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+
+
 }

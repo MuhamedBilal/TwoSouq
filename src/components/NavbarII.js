@@ -14,19 +14,19 @@ function NavbarII() {
       <div className="first-row">
         <p style={{ color: "#D9904E" }}>الرئيسية</p>
         <p>
-          مركبات و سيارات <FontAwesomeIcon icon={faAngleDown} />
+          مركبات و سيارات <FontAwesomeIcon className='arrow-down' icon={faAngleDown} />
         </p>
         <p>
           {" "}
-          عقارات <FontAwesomeIcon icon={faAngleDown} />{" "}
+          عقارات <FontAwesomeIcon className='arrow-down' icon={faAngleDown} />{" "}
         </p>
         <p>
           {" "}
-          موبايلات و تابلت <FontAwesomeIcon icon={faAngleDown} />
+          موبايلات و تابلت <FontAwesomeIcon className='arrow-down' icon={faAngleDown} />
         </p>
         <p>
           {" "}
-          إلكترونيات <FontAwesomeIcon icon={faAngleDown} />
+          إلكترونيات <FontAwesomeIcon className='arrow-down' icon={faAngleDown} />
         </p>
         <p>المزيد من الفئات</p>
       </div>
