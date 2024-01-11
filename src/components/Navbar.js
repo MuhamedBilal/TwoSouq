@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/Navbar.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import CA from "../assets/CA.svg";
+import { FontAwesomeIcon, faAngleDown } from "../assets/fontawsome";
+
+import logos from "../assets/svg.js";
 
 function Navbar() {
   return (
@@ -11,7 +11,7 @@ function Navbar() {
         <button className="country">
           <FontAwesomeIcon icon={faAngleDown} />
           كندا
-          <img src={CA} alt="canadian-logo" className="flag" />
+          <img src={logos.CA} alt="canadian-logo" className="flag" />
         </button>
 
         <button className="language">

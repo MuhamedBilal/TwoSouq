@@ -1,9 +1,7 @@
 import React from "react";
 import "../styles/NavbarII.css";
 import logo from "../assets/logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon, faAngleDown, faMagnifyingGlass } from "../assets/fontawsome";
 
 function NavbarII() {
   return (
